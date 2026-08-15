@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steadia — Support</title>
+<style>
+  :root { --bg:#0c0a07; --fg:#f5f0e7; --dim:#a89e91; --accent:#e2551a; --rule:#2a231c; }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; padding:3rem 1.25rem 5rem; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+  main { max-width:42rem; margin:0 auto; }
+  h1 { font-size:1.75rem; line-height:1.2; margin:0 0 .35rem; letter-spacing:-.01em; }
+  h2 { font-size:1.1rem; margin:2.5rem 0 .6rem; letter-spacing:-.005em; }
+  h3 { font-size:1rem; margin:1.6rem 0 .3rem; color:var(--fg); }
+  .sub { color:var(--dim); margin:0 0 2.5rem; font-size:.95rem; }
+  p, li { color:#ded5c8; }
+  ul { padding-left:1.15rem; }
+  li { margin:.35rem 0; }
+  a { color:var(--accent); }
+  strong { color:var(--fg); }
+  hr { border:0; border-top:1px solid var(--rule); margin:3rem 0 1.5rem; }
+  footer { color:var(--dim); font-size:.875rem; }
+  .lede { border-left:2px solid var(--accent); padding-left:1rem; margin:0 0 2rem; color:var(--fg); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Steadia — Support</h1>
+<p class="sub">Questions, bugs, and the things that trip people up</p>
+
+<p class="lede">Email <a href="mailto:steadia.app@gmail.com">steadia.app@gmail.com</a>.
+Include your iOS version and what you were doing when it happened — there is no
+crash reporting in the app, so your description is all there is to go on.</p>
+
+<h2>Common issues</h2>
+
+<h3>The rest alert doesn't fire when my phone is locked</h3>
+<p>Almost always notification permission. Check
+Settings&nbsp;→&nbsp;Notifications&nbsp;→&nbsp;Steadia&nbsp;→&nbsp;Allow
+Notifications.</p>
+<p>iOS only asks once. If the prompt was declined or dismissed the first time,
+the app cannot ask again, and the failure is silent — the timer still counts down
+and the in-app alert still sounds, so only the locked-screen case is affected.
+Turning permission back on in Settings fixes it immediately.</p>
+
+<h3>The countdown on my lock screen shows 1:—— instead of a time</h3>
+<p>Live Activities need their own permission the first time. Tap
+<em>Allow</em> on the "Allow Live Activities from Steadia?" prompt, or enable it
+in Settings&nbsp;→&nbsp;Steadia&nbsp;→&nbsp;Live Activities.</p>
+
+<h3>I can't hear the alert</h3>
+<p>The rest alert is designed to sound through the ring/silent switch, and to
+duck your music rather than stop it. If you hear nothing at all, check the volume
+while the app is open — the app's audio follows the media volume, not the
+ringer.</p>
+
+<h3>Will I lose my history if I delete the app?</h3>
+<p><strong>Yes.</strong> Everything is stored on your device and nowhere else.
+There is no account to restore from. Use <em>More&nbsp;→&nbsp;Data&nbsp;→&nbsp;Export
+file</em> before deleting or switching phones.</p>
+
+<h3>Moving to a new iPhone</h3>
+<p>Two ways, both under <em>More&nbsp;→&nbsp;Data</em>:</p>
+<ul>
+  <li><strong>Export file</strong> on the old phone, then <strong>Import file</strong>
+      on the new one. Works for a history of any size.</li>
+  <li><strong>Copy sync code</strong> on the old phone and paste it on the new one.
+      No file needed, but very large histories are too long to paste — the app
+      will tell you and point you at the file instead.</li>
+</ul>
+
+<h3>Can I change the program?</h3>
+<p>Yes — the <em>Program</em> tab has several built-in splits, and you can copy any
+of them and edit the exercises, sets and rep ranges, or build one from scratch.</p>
+
+<h2>What the app deliberately does not do</h2>
+<ul>
+  <li>No account, no sign-in, no cloud sync</li>
+  <li>No ads, no tracking, no analytics</li>
+  <li>No subscription</li>
+  <li>No Apple Health integration</li>
+  <li>No internet connection — it works the same in a basement gym as anywhere else</li>
+</ul>
+<p>See the <a href="privacy.html">privacy policy</a> for the detail.</p>
+
+<h2>Feature requests</h2>
+<p>Welcome, by email. The app is deliberately small and stays that way, so not
+everything can land — but it is worth asking.</p>
+
+<hr>
+<footer>Steadia is an independent app.</footer>
+
+</main>
+</body>
+</html>
